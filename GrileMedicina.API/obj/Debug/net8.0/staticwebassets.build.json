@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "TdKJsiBzIaDaR+gCp5L6qgzO9F/r40RMabH1YoEqYUo=",
+  "Source": "GrileMedicina.API",
+  "BasePath": "_content/GrileMedicina.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

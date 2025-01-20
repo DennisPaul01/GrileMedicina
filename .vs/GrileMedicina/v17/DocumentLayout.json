@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Denis.Mucioiu\\OneDrive - Access UK Ltd\\Desktop\\GrileMedicina\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9403E9-3D4B-4663-AE45-51BDFE388624}|GrileMedicina.API\\GrileMedicina.API.csproj|c:\\users\\denis.mucioiu\\onedrive - access uk ltd\\desktop\\grilemedicina\\grilemedicina.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF9403E9-3D4B-4663-AE45-51BDFE388624}|GrileMedicina.API\\GrileMedicina.API.csproj|solutionrelative:grilemedicina.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9403E9-3D4B-4663-AE45-51BDFE388624}|GrileMedicina.API\\GrileMedicina.API.csproj|c:\\users\\denis.mucioiu\\onedrive - access uk ltd\\desktop\\grilemedicina\\grilemedicina.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9403E9-3D4B-4663-AE45-51BDFE388624}|GrileMedicina.API\\GrileMedicina.API.csproj|solutionrelative:grilemedicina.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9403E9-3D4B-4663-AE45-51BDFE388624}|GrileMedicina.API\\GrileMedicina.API.csproj|c:\\users\\denis.mucioiu\\onedrive - access uk ltd\\desktop\\grilemedicina\\grilemedicina.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AF9403E9-3D4B-4663-AE45-51BDFE388624}|GrileMedicina.API\\GrileMedicina.API.csproj|solutionrelative:grilemedicina.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF9403E9-3D4B-4663-AE45-51BDFE388624}|GrileMedicina.API\\GrileMedicina.API.csproj|c:\\users\\denis.mucioiu\\onedrive - access uk ltd\\desktop\\grilemedicina\\grilemedicina.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF9403E9-3D4B-4663-AE45-51BDFE388624}|GrileMedicina.API\\GrileMedicina.API.csproj|solutionrelative:grilemedicina.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Denis.Mucioiu\\OneDrive - Access UK Ltd\\Desktop\\GrileMedicina\\GrileMedicina.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "GrileMedicina.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Denis.Mucioiu\\OneDrive - Access UK Ltd\\Desktop\\GrileMedicina\\GrileMedicina.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "GrileMedicina.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-03T15:32:10.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Denis.Mucioiu\\OneDrive - Access UK Ltd\\Desktop\\GrileMedicina\\GrileMedicina.API\\appsettings.json",
+              "RelativeDocumentMoniker": "GrileMedicina.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Denis.Mucioiu\\OneDrive - Access UK Ltd\\Desktop\\GrileMedicina\\GrileMedicina.API\\appsettings.json",
+              "RelativeToolTip": "GrileMedicina.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-03T15:32:05.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Denis.Mucioiu\\OneDrive - Access UK Ltd\\Desktop\\GrileMedicina\\GrileMedicina.API\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "GrileMedicina.API\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Denis.Mucioiu\\OneDrive - Access UK Ltd\\Desktop\\GrileMedicina\\GrileMedicina.API\\WeatherForecast.cs",
+              "RelativeToolTip": "GrileMedicina.API\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T15:31:48.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Denis.Mucioiu\\OneDrive - Access UK Ltd\\Desktop\\GrileMedicina\\GrileMedicina.API\\Program.cs",
+              "RelativeDocumentMoniker": "GrileMedicina.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Denis.Mucioiu\\OneDrive - Access UK Ltd\\Desktop\\GrileMedicina\\GrileMedicina.API\\Program.cs",
+              "RelativeToolTip": "GrileMedicina.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T15:35:00.89Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 106,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
