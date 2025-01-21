@@ -1,0 +1,82 @@
+[
+    {
+        "pages": [
+            163
+        ],
+        "correct": ["a"],
+        "answersCount": 5,
+        "correctAnswersCount": 1,
+        "explanationExists": true,
+        "questionIndex": 211,
+        "answersOrder": "52c",
+        "chapterId": "624713bb327119885ebecf96",
+        "text": "212. Următoarea substanță aparține clasei cu cel mai extins spectru antibiotic:",
+        "answers": [
+            "Amoxicilina",
+            "Ceftriaxona",
+            "Ciprofloxacina",
+            "Meropenem",
+            "Streptomicina"
+        ]
+    },
+    {
+        "pages": [
+            162
+        ],
+        "correct": ["a","c"],
+        "answersCount": 5,
+        "correctAnswersCount": 2,
+        "explanationExists": true,
+        "questionIndex": 200,
+        "answersOrder": "7d68",
+        "chapterId": "624713bb327119885ebecf96",
+        "text": "201. Următoarele antibiotice se găsesc în doză standard orală de 100mg:",
+        "answers": [
+            "Ciprofloxacina",
+            "Amoxicilina",
+            "Nitrofurantoina",
+            "Ceftriaxona",
+            "Doxiciclina"
+        ]
+    },
+    {
+        "pages": [
+            156
+        ],
+        "correct": ["a","c","d"],
+        "answersCount": 5,
+        "correctAnswersCount": 3,
+        "explanationExists": true,
+        "questionIndex": 30,
+        "answersOrder": "7606",
+        "chapterId": "624713bb327119885ebecf96",
+        "text": "31. Probele de laborator în sepsis pot releva:",
+        "answers": [
+            "trombocitoză",
+            "leucocitoză",
+            "creșterea creatininei",
+            "proteină C reactivă crescută",
+            "infiltrate pulmonare"
+        ]
+    },
+    {
+        "pages": [
+            162
+        ],
+        "correct": ["b","c","d"],
+        "answersCount": 5,
+        "correctAnswersCount": 3,
+        "explanationExists": true,
+        "questionIndex": 225,
+        "answersOrder": "5b69",
+        "chapterId": "624713bb327119885ebecf96",
+        "text": "226. Următoarele antibiotice pot fi administrate pentru meningită:",
+        "answers": [
+            "Cefotaxim",
+            "Amikacină",
+            "Meropenem",
+            "Amoxicilină per os",
+            "Amoxicilină intravenos"
+        ]
+    }
+]
