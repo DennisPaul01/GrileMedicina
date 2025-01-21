@@ -1,6 +1,0 @@
-@GrileMedicina.API_HostAddress = http://localhost:5125
-
-GET {{GrileMedicina.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

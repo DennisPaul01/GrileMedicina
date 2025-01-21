@@ -1,0 +1,167 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|c:\\users\\denis.mucioiu\\source\\repos\\grilemedicinadev.api\\grilemedicinadev\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|solutionrelative:grilemedicinadev\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|c:\\users\\denis.mucioiu\\source\\repos\\grilemedicinadev.api\\grilemedicinadev\\entities\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|solutionrelative:grilemedicinadev\\entities\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|c:\\users\\denis.mucioiu\\source\\repos\\grilemedicinadev.api\\grilemedicinadev\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|solutionrelative:grilemedicinadev\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|c:\\users\\denis.mucioiu\\source\\repos\\grilemedicinadev.api\\grilemedicinadev\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|solutionrelative:grilemedicinadev\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|c:\\users\\denis.mucioiu\\source\\repos\\grilemedicinadev.api\\grilemedicinadev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|solutionrelative:grilemedicinadev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|c:\\users\\denis.mucioiu\\source\\repos\\grilemedicinadev.api\\grilemedicinadev\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|solutionrelative:grilemedicinadev\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|c:\\users\\denis.mucioiu\\source\\repos\\grilemedicinadev.api\\grilemedicinadev\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CBFCF0C8-2DAD-46C1-9D70-78F5714EB0F7}|GrileMedicinaDev\\GrileMedicinaDev.csproj|solutionrelative:grilemedicinadev\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\NuGet.Build.Tasks.Pack\\build\\NuGet.Build.Tasks.Pack.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 62,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Question.cs",
+              "DocumentMoniker": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\Entities\\Question.cs",
+              "RelativeDocumentMoniker": "GrileMedicinaDev\\Entities\\Question.cs",
+              "ToolTip": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\Entities\\Question.cs",
+              "RelativeToolTip": "GrileMedicinaDev\\Entities\\Question.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:31:41.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuestionController.cs",
+              "DocumentMoniker": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\Controllers\\QuestionController.cs",
+              "RelativeDocumentMoniker": "GrileMedicinaDev\\Controllers\\QuestionController.cs",
+              "ToolTip": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\Controllers\\QuestionController.cs",
+              "RelativeToolTip": "GrileMedicinaDev\\Controllers\\QuestionController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAA0wBkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:41:44.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "GrileMedicinaDev\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\appsettings.Development.json",
+              "RelativeToolTip": "GrileMedicinaDev\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-06T11:20:00.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\appsettings.json",
+              "RelativeDocumentMoniker": "GrileMedicinaDev\\appsettings.json",
+              "ToolTip": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\appsettings.json",
+              "RelativeToolTip": "GrileMedicinaDev\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-04T11:10:48.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "GrileMedicinaDev\\Data\\DataContext.cs",
+              "ToolTip": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\Data\\DataContext.cs",
+              "RelativeToolTip": "GrileMedicinaDev\\Data\\DataContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswBcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T11:00:11.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "GrileMedicinaDev\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\WeatherForecast.cs",
+              "RelativeToolTip": "GrileMedicinaDev\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T10:48:43.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\Program.cs",
+              "RelativeDocumentMoniker": "GrileMedicinaDev\\Program.cs",
+              "ToolTip": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\Program.cs",
+              "RelativeToolTip": "GrileMedicinaDev\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T10:48:34.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NuGet.Build.Tasks.Pack.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\NuGet.Build.Tasks.Pack\\build\\NuGet.Build.Tasks.Pack.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\NuGet.Build.Tasks.Pack\\build\\NuGet.Build.Tasks.Pack.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\NuGet.Build.Tasks.Pack\\build\\NuGet.Build.Tasks.Pack.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\NuGet.Build.Tasks.Pack\\build\\NuGet.Build.Tasks.Pack.targets",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-01-04T11:39:53.589Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 244,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
