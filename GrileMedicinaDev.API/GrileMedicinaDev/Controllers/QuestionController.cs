@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
-using GrileMedicinaDev.Data;
 using GrileMedicinaDev.Entities;
-using GrileMedicinaDev.Models
-using MongoDB.Bson;
+using GrileMedicinaDev.Models;
+using GrileMedicinaDev.Services;
 
 namespace GrileMedicinaDev.Controllers
 {
@@ -12,25 +11,23 @@ namespace GrileMedicinaDev.Controllers
     [ApiController]
     public class QuestionController : ControllerBase
     {
-        public readonly IMongoCollection<Question>? _questions;
-        public QuestionController(MongoDbService mongoDbService)
+        private readonly IQuestionsRepository _questionsRepository;
+
+        public QuestionController(IQuestionsRepository questionsRepository)
         {
-            _questions = mongoDbService.Database?.GetCollection<Question>("question");
+            _questionsRepository = questionsRepository;
         }
 
-
         [HttpGet]
-        public async Task<IEnumerable<Question>> GetAlltQuestions()
+        public async Task<IEnumerable<Question>> GetAllQuestions()
         {
-            var questions = await _questions.Find(FilterDefinition<Question>.Empty).ToListAsync();
-            return questions;
+            return await _questionsRepository.GetAllQuestionsAsync();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Question?>> GetQuestionById(string id)
         {
-            var filter = Builders<Question>.Filter.Eq(x=>x.Id, id);
-            var question = _questions.Find(filter).FirstOrDefaultAsync();
+            var question = await _questionsRepository.GetQuestionByIdAsync(id);
             return question is not null ? Ok(question) : NotFound();
         }
 
@@ -39,53 +36,37 @@ namespace GrileMedicinaDev.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState); // Trimite erorile de validare către client
+                return BadRequest(ModelState);
             }
 
-            var question = new Question
-            {
-                Id = ObjectId.GenerateNewId().ToString(),
-                ChapterId = questionDto.ChapterId,
-                Pages = questionDto.Pages,
-                CorrectAnswers = questionDto.CorrectAnswers,
-                AnswersCount = questionDto.AnswersCount,
-                CorrectAnswersCount = questionDto.CorrectAnswersCount,
-                ExplanationExists = questionDto.ExplanationExists,
-                QuestionIndex = questionDto.QuestionIndex,
-                AnswersOrder = questionDto.AnswersOrder,
-                Text = questionDto.Text,
-                Answers = questionDto.Answers
-            };
-
-            await _questions.InsertOneAsync(question);
+            var question = await _questionsRepository.CreateQuestionFromDtoAsync(questionDto);
             return CreatedAtAction(nameof(GetQuestionById), new { id = question.Id }, question);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateQuestion(string id, Question question)
         {
-            var filter = Builders<Question>.Filter.Eq(x => x.Id, id);
-            var update = Builders<Question>.Update
-                .Set(x => x.ChapterId, question.ChapterId)
-                .Set(x => x.Pages, question.Pages)
-                .Set(x => x.CorrectAnswers, question.CorrectAnswers)
-                .Set(x => x.AnswersCount, question.AnswersCount)
-                .Set(x => x.CorrectAnswersCount, question.CorrectAnswersCount)
-                .Set(x => x.ExplanationExists, question.ExplanationExists)
-                .Set(x => x.QuestionIndex, question.QuestionIndex)
-                .Set(x => x.AnswersOrder, question.AnswersOrder)
-                .Set(x => x.Text, question.Text)
-                .Set(x => x.Answers, question.Answers);
-            var result = await _questions.UpdateOneAsync(filter, update);
-            return result.ModifiedCount > 0 ? NoContent() : NotFound();
+            var updated = await _questionsRepository.UpdateQuestionAsync(id, question);
+            return updated ? NoContent() : NotFound();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteQuestion(string id)
         {
-            var filter = Builders<Question>.Filter.Eq(x => x.Id, id);
-            var result = await _questions.DeleteOneAsync(filter);
-            return result.DeletedCount > 0 ? NoContent() : NotFound();
+            var deleted = await _questionsRepository.DeleteQuestionAsync(id);
+            return deleted ? NoContent() : NotFound();
         }
     }
+}
+
+
+using System;
+public class Kata
+{
+  public static string FindNeedle(object[] haystack)
+  {
+    var foundString = haystack.FirstOrDefault(el=>el.Equals("needle"));
+    Console.Write(foundString);
+    return "found the needle";
+  }
 }

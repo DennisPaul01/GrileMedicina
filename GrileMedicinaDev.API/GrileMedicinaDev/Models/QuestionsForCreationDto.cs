@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using GrileMedicinaDev.Entities;
 
 namespace GrileMedicinaDev.Models
 {
@@ -38,6 +39,6 @@ namespace GrileMedicinaDev.Models
 
         [Required(ErrorMessage = "Lista Answers este obligatorie.")]
         [MinLength(1, ErrorMessage = "Lista răspunsurilor trebuie să conțină cel puțin un răspuns.")]
-        public List<string> Answers { get; set; } // Lista tuturor răspunsurilor disponibile
+        public List<Answer> Answers { get; set; } // Lista tuturor răspunsurilor disponibile
     }
 }

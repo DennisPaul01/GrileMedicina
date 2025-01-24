@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\GrileMedicinaDev.csproj": {}
+    "/Users/denis.mucioiu/Personal Projects/GrileMedicina/GrileMedicinaDev.API/GrileMedicinaDev/GrileMedicinaDev.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\GrileMedicinaDev.csproj": {
+    "/Users/denis.mucioiu/Personal Projects/GrileMedicina/GrileMedicinaDev.API/GrileMedicinaDev/GrileMedicinaDev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\GrileMedicinaDev.csproj",
+        "projectUniqueName": "/Users/denis.mucioiu/Personal Projects/GrileMedicina/GrileMedicinaDev.API/GrileMedicinaDev/GrileMedicinaDev.csproj",
         "projectName": "GrileMedicinaDev",
-        "projectPath": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\GrileMedicinaDev.csproj",
-        "packagesPath": "C:\\Users\\Denis.Mucioiu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Denis.Mucioiu\\source\\repos\\GrileMedicinaDev.API\\GrileMedicinaDev\\obj\\",
+        "projectPath": "/Users/denis.mucioiu/Personal Projects/GrileMedicina/GrileMedicinaDev.API/GrileMedicinaDev/GrileMedicinaDev.csproj",
+        "packagesPath": "/Users/denis.mucioiu/.nuget/packages/",
+        "outputPath": "/Users/denis.mucioiu/Personal Projects/GrileMedicina/GrileMedicinaDev.API/GrileMedicinaDev/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Denis.Mucioiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/denis.mucioiu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -102,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

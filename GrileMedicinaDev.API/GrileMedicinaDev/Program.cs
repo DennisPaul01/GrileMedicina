@@ -1,4 +1,5 @@
 using GrileMedicinaDev.Data;
+using GrileMedicinaDev.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
@@ -17,6 +18,7 @@ builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(build
 builder.Services.AddAuthorization();
 builder.Services.AddIdentityApiEndpoints<IdentityUser>().AddEntityFrameworkStores<DataContext>();
 builder.Services.AddSingleton<MongoDbService>();
+builder.Services.AddScoped<IQuestionsRepository, QuestionsRepository>();
 
 var app = builder.Build();
 

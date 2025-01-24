@@ -46,10 +46,9 @@ namespace GrileMedicinaDev.Entities
         [BsonElement("text")]
         [BsonRepresentation(BsonType.String)]  // Asigură că este salvat corect ca șir
         public string Text { get; set; }
-
-        // 'Answers' rămâne listă de stringuri
+       
+        // Change the Answers property to be a list of Answer objects
         [BsonElement("answers")]
-        [BsonRepresentation(BsonType.String)]  // Liste de stringuri sunt stocate corect
-        public List<string> Answers { get; set; }
+        public List<Answer> Answers { get; set; }
     }
 }

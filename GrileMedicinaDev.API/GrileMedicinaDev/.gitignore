@@ -1,0 +1,56 @@
+# Build artifacts
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.suo
+*.ntvs*
+*.njsproj
+*.vcxproj
+*.pdb
+
+# Visual Studio 2019/2022 directories
+.vs/
+.vscode/
+
+# Backup files
+*_backup/
+*.bak
+
+# Database and cache files
+*.log
+*.ldb
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/packages/
+.nuget/packages.config
+
+# Environment and config files
+*.local
+.env
+.env.*
+
+# ASP.NET generated files
+AppData/
+AppLogs/
+wwwroot/
+**/node_modules/
+
+# Rider files
+.idea/
+*.sln.iml
+
+# Secret keys
+Secrets/
+.secrets/
+
+# JetBrains Rider
+.idea/
