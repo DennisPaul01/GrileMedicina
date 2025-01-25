@@ -20,7 +20,7 @@ builder.Services.AddIdentityApiEndpoints<IdentityUser>().AddEntityFrameworkStore
 builder.Services.AddSingleton<MongoDbService>();
 builder.Services.AddScoped<IQuestionsRepository, QuestionsRepository>();
 builder.Services.AddScoped<IChaptersRepository, ChaptersRepository>();
-builder.Services.AddScoped<ICategoryStatisticsService, CategoryStatisticsService>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 var app = builder.Build();
 
