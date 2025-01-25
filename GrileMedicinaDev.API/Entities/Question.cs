@@ -27,15 +27,19 @@ namespace GrileMedicinaDev.Entities
         public List<string> CorrectAnswers { get; set; }
 
         [BsonElement("answersCount")]
+        [BsonRepresentation(BsonType.Int32)]
         public int AnswersCount { get; set; }
 
         [BsonElement("correctAnswersCount")]
+        [BsonRepresentation(BsonType.Int32)]
         public int CorrectAnswersCount { get; set; }
 
         [BsonElement("explanationExists")]
+        [BsonRepresentation(BsonType.Boolean)]
         public bool ExplanationExists { get; set; }
 
         [BsonElement("questionIndex")]
+        [BsonRepresentation(BsonType.Int32)]
         public int QuestionIndex { get; set; }
 
         [BsonElement("answersOrder")]
