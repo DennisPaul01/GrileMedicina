@@ -9,5 +9,6 @@ namespace GrileMedicinaDev.Services
         Task<CategoryEntity> CreateCategoryAsync(CategoryDto category);
         Task<bool> UpdateCategoryAsync(string id, CategoryDto category);
         Task<bool> DeleteCategoryAsync(string id);
+        Task<(bool, string)> CheckCategoriesExistAsync(string[] categoryNames);
     }
 }

@@ -13,9 +13,5 @@ namespace GrileMedicinaDev.Entities
         [BsonElement("end")]
         [BsonRepresentation(BsonType.Int32)]
         public int End { get; set; }
-
-        [BsonElement("id")]
-        [BsonRepresentation(BsonType.String)]
-        public string Id { get; set; }
     }
 }

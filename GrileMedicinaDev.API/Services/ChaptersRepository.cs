@@ -17,9 +17,31 @@ namespace GrileMedicinaDev.Services
             _chapters = mongoDbService.Database?.GetCollection<Chapter>("chapters");
         }
 
-        public async Task<IEnumerable<Chapter>> GetAllChaptersAsync()
+        public async Task<IEnumerable<Chapter>> GetAllChaptersAsync(
+            string? name,
+            string? createdBy,
+            bool? isUserContent,
+            bool? explanationsGenerating,
+            List<string>? categories,
+            int? quantity,
+            List<string>? pages)
         {
-            return await _chapters.Find(_ => true).ToListAsync();
+            var filter = Builders<Chapter>.Filter.Empty;
+
+            if (categories != null && categories.Count > 0)
+            {
+                filter = Builders<Chapter>.Filter.In("Categories", categories);
+            }
+            // If categories is null or empty, all chapters will be returned
+
+            // Add additional filters based on other parameters if needed
+            // Example:
+            // if (!string.IsNullOrEmpty(name))
+            // {
+            //     filter = Builders<Chapter>.Filter.And(filter, Builders<Chapter>.Filter.Eq(x => x.Name, name));
+            // }
+
+            return await _chapters.Find(filter).ToListAsync();
         }
 
         public async Task<Chapter?> GetChapterByIdAsync(string id)
