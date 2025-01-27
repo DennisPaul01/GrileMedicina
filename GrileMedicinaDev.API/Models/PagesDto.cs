@@ -4,6 +4,5 @@ namespace GrileMedicinaDev.Models
     {
         public int Start { get; set; }
         public int End { get; set; }
-        public string Id { get; set; }
     }
 }

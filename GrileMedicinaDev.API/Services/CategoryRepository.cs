@@ -48,5 +48,22 @@ namespace GrileMedicinaDev.Services
             var result = await _categories.DeleteOneAsync(stat => stat.Id == id);
             return result.IsAcknowledged && result.DeletedCount > 0;
         }
+
+        public async Task<(bool, string)> CheckCategoriesExistAsync(string[] categoryNames)
+        {
+            var filter = Builders<CategoryEntity>.Filter.In(c => c.Category, categoryNames);
+            var existingCategories = await _categories.Find(filter).ToListAsync();
+            var existingCategoryNames = existingCategories.Select(c => c.Category).ToHashSet();
+
+            foreach (var categoryName in categoryNames)
+            {
+                if (!existingCategoryNames.Contains(categoryName))
+                {
+                    return (false, categoryName);
+                }
+            }
+
+            return (true, null);
+        }
     }
 }
