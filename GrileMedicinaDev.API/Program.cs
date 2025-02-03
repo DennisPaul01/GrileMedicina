@@ -21,6 +21,7 @@ builder.Services.AddSingleton<MongoDbService>();
 builder.Services.AddScoped<IQuestionsRepository, QuestionsRepository>();
 builder.Services.AddScoped<IChaptersRepository, ChaptersRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IExamRepository, ExamRepository>();
 
 var app = builder.Build();
 

@@ -75,5 +75,12 @@ namespace GrileMedicinaDev.Services
             var result = await _chapters.DeleteOneAsync(filter);
             return result.DeletedCount > 0;
         }
+
+        public async Task<bool> DoChaptersExistAsync(IEnumerable<string> chapterIds)
+        {
+            var filter = Builders<Chapter>.Filter.In(x => x.Id, chapterIds);
+            var count = await _chapters.CountDocumentsAsync(filter);
+            return count == chapterIds.Count();
+        }
     }
 }

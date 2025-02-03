@@ -19,5 +19,6 @@ namespace GrileMedicinaDev.Services
         Task<Chapter> CreateChapterFromDtoAsync(ChapterForCreationDto chapterDto);
         Task<bool> UpdateChapterAsync(string id, Chapter chapter);
         Task<bool> DeleteChapterAsync(string id);
+        Task<bool> DoChaptersExistAsync(IEnumerable<string> chapterIds);
     }
 }

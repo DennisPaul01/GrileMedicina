@@ -40,7 +40,6 @@ namespace GrileMedicinaDev.Controllers
                 }
             }
 
-            Console.WriteLine($"{name}, {createdBy}, {isUserContent}, {explanationsGenerating}, {categories}, {quantity}, {pages}");
             var chapters = await _chaptersRepository.GetAllChaptersAsync(name, createdBy, isUserContent, explanationsGenerating, categories, quantity, pages);
             return Ok(chapters);
         }
