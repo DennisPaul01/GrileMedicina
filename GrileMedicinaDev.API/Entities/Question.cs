@@ -22,31 +22,27 @@ namespace GrileMedicinaDev.Entities
         public List<int> Pages { get; set; }
 
         // Rămâne ca 'List<string>' pentru că este o listă de stringuri care pot fi corect salvate de MongoDB
-        [BsonElement("correct")]
+        [BsonElement("correctAnswers")]
         [BsonRepresentation(BsonType.String)]  // Liste de stringuri sunt deja tratate corect
         public List<string> CorrectAnswers { get; set; }
 
         [BsonElement("answersCount")]
+        [BsonRepresentation(BsonType.Int32)]
         public int AnswersCount { get; set; }
 
         [BsonElement("correctAnswersCount")]
+        [BsonRepresentation(BsonType.Int32)]
         public int CorrectAnswersCount { get; set; }
 
         [BsonElement("explanationExists")]
+        [BsonRepresentation(BsonType.Boolean)]
         public bool ExplanationExists { get; set; }
-
-        [BsonElement("questionIndex")]
-        public int QuestionIndex { get; set; }
-
-        [BsonElement("answersOrder")]
-        [BsonRepresentation(BsonType.String)]  // Răspunsurile pot fi reprezentate și ca șir
-        public string AnswersOrder { get; set; }
 
         // 'Text' rămâne ca string
         [BsonElement("text")]
         [BsonRepresentation(BsonType.String)]  // Asigură că este salvat corect ca șir
         public string Text { get; set; }
-       
+
         // Change the Answers property to be a list of Answer objects
         [BsonElement("answers")]
         public List<Answer> Answers { get; set; }

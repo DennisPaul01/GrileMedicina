@@ -12,16 +12,36 @@ namespace GrileMedicinaDev.Controllers
     public class ChapterController : ControllerBase
     {
         private readonly IChaptersRepository _chaptersRepository;
+        private readonly ICategoryRepository _categoryRepository;
 
-        public ChapterController(IChaptersRepository chaptersRepository)
+        public ChapterController(IChaptersRepository chaptersRepository, ICategoryRepository categoryRepository)
         {
             _chaptersRepository = chaptersRepository;
+            _categoryRepository = categoryRepository;
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Chapter>> GetAllChapters()
+        public async Task<IActionResult> GetAllChapters(
+            [FromQuery] string? name,
+            [FromQuery] string? createdBy,
+            [FromQuery] bool? isUserContent,
+            [FromQuery] bool? explanationsGenerating,
+            [FromQuery] List<string>? categories,
+            [FromQuery] int? quantity,
+            [FromQuery] List<string>? pages
+            )
         {
-            return await _chaptersRepository.GetAllChaptersAsync();
+            if (categories != null && categories.Any())
+            {
+                var (exists, missingCategory) = await _categoryRepository.CheckCategoriesExistAsync(categories.ToArray());
+                if (!exists)
+                {
+                    return NotFound($"Category '{missingCategory}' does not exist.");
+                }
+            }
+
+            var chapters = await _chaptersRepository.GetAllChaptersAsync(name, createdBy, isUserContent, explanationsGenerating, categories, quantity, pages);
+            return Ok(chapters);
         }
 
         [HttpGet("{id}")]

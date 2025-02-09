@@ -4,6 +4,7 @@ using MongoDB.Driver;
 using GrileMedicinaDev.Entities;
 using GrileMedicinaDev.Models;
 using GrileMedicinaDev.Services;
+using GrileMedicinaDev.Exceptions;
 
 namespace GrileMedicinaDev.Controllers
 {
@@ -39,15 +40,29 @@ namespace GrileMedicinaDev.Controllers
                 return BadRequest(ModelState);
             }
 
-            var question = await _questionsRepository.CreateQuestionFromDtoAsync(questionDto);
-            return CreatedAtAction(nameof(GetQuestionById), new { id = question.Id }, question);
+            try
+            {
+                var question = await _questionsRepository.CreateQuestionFromDtoAsync(questionDto);
+                return CreatedAtAction(nameof(GetQuestionById), new { id = question.Id }, question);
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateQuestion(string id, Question question)
+        public async Task<IActionResult> UpdateQuestion(string id, QuestionForUpdate question)
         {
-            var updated = await _questionsRepository.UpdateQuestionAsync(id, question);
-            return updated ? NoContent() : NotFound();
+            try
+            {
+                var updated = await _questionsRepository.UpdateQuestionAsync(id, question);
+                return updated ? NoContent() : NotFound();
+            }
+            catch (NotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
         }
 
         [HttpDelete("{id}")]
