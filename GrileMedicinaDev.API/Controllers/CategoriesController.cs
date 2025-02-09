@@ -20,9 +20,19 @@ namespace GrileMedicinaDev.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<CategoryEntity>>> GetCategories()
+        public async Task<ActionResult<List<CategoryEntity>>> GetCategories(
+            [FromQuery] string[] select,
+            [FromQuery] int limit,
+            [FromQuery] int? questionsCountPlatform,
+            [FromQuery] int? questionsCountPerCategory,
+            [FromQuery] int? cardsCountPlatform,
+            [FromQuery] int? cardsCountPerCategory,
+            [FromQuery] int? usersJoined,
+            [FromQuery] int? examsStarted,
+            [FromQuery] int? ordersCompleted,
+            [FromQuery] DateTime? examDate)
         {
-            var categories = await _categoryRepository.GetCategoryAsync();
+            var categories = await _categoryRepository.GetCategoryAsync(select, limit, questionsCountPlatform, questionsCountPerCategory, cardsCountPlatform, cardsCountPerCategory, usersJoined, examsStarted, ordersCompleted, examDate);
             return Ok(categories);
         }
 

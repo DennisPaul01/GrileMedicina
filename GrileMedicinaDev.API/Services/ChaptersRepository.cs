@@ -55,7 +55,19 @@ namespace GrileMedicinaDev.Services
         {
             var chapter = new Chapter
             {
-                // ...map properties from chapterDto to Chapter...
+                Name = chapterDto.Name,
+                IsUserContent = chapterDto.IsUserContent,
+                Categories = chapterDto.Categories,
+                Quantity = 0,
+                CreatedBy = chapterDto.CreatedBy,
+                Pages = new Pages
+                {
+
+                    Start = chapterDto.Pages.Start,
+                    End = chapterDto.Pages.End,
+
+                },
+                ExplanationsGenerating = chapterDto.ExplanationsGenerating
             };
             await _chapters.InsertOneAsync(chapter);
             return chapter;
@@ -81,6 +93,14 @@ namespace GrileMedicinaDev.Services
             var filter = Builders<Chapter>.Filter.In(x => x.Id, chapterIds);
             var count = await _chapters.CountDocumentsAsync(filter);
             return count == chapterIds.Count();
+        }
+        public async Task<bool> UpdateQuantityChapterAsync(string id, int quantity)
+        {
+            var filter = Builders<Chapter>.Filter.Eq(x => x.Id, id);
+            var update = Builders<Chapter>.Update
+                .Set(x => x.Quantity, quantity);
+            var result = await _chapters.UpdateOneAsync(filter, update);
+            return result.ModifiedCount > 0;
         }
     }
 }

@@ -13,6 +13,6 @@ namespace GrileMedicinaDev.Services
         Task<bool> UpdateQuestionAsync(string id, QuestionForUpdate question);
         Task<bool> DeleteQuestionAsync(string id);
         Task<Question> CreateQuestionFromDtoAsync(QuestionsForCreationDto questionDto);
-        Task<IEnumerable<Question>> GetQuestionsByChapterIdsAsync(IEnumerable<string> chapterIds);  // New method to get questions by chapter IDs
+        Task<IEnumerable<Question>> GetQuestionsByChapterIdsAsync(IEnumerable<string> chapterIds);
     }
 }

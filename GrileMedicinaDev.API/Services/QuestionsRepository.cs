@@ -38,6 +38,9 @@ namespace GrileMedicinaDev.Services
             {
                 throw new NotFoundException("ChapterId does not exist.");
             }
+
+            var count = CountQuestionsByChapterIdAsync(question.ChapterId).Result;
+            await _chaptersRepository.UpdateQuantityChapterAsync(question.ChapterId, count + 1);
             await _questions.InsertOneAsync(question);
         }
 
@@ -91,7 +94,18 @@ namespace GrileMedicinaDev.Services
         public async Task<bool> DeleteQuestionAsync(string id)
         {
             var filter = Builders<Question>.Filter.Eq(x => x.Id, id);
+            var question = await _questions.Find(filter).FirstOrDefaultAsync();
+
+            if (question == null)
+            {
+                return false;
+            }
+
+            var count = await CountQuestionsByChapterIdAsync(question.ChapterId);
+            await _chaptersRepository.UpdateQuantityChapterAsync(question.ChapterId, count - 1);
+
             var result = await _questions.DeleteOneAsync(filter);
+
             return result.DeletedCount > 0;
         }
 
@@ -133,6 +147,12 @@ namespace GrileMedicinaDev.Services
         {
             var filter = Builders<Question>.Filter.In(q => q.ChapterId, chapterIds);
             return await _questions.Find(filter).ToListAsync();
+        }
+
+        private async Task<int> CountQuestionsByChapterIdAsync(string chapterId)
+        {
+            var filter = Builders<Question>.Filter.Eq(q => q.ChapterId, chapterId);
+            return (int)await _questions.CountDocumentsAsync(filter);
         }
     }
 }
