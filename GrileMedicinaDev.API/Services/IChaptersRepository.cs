@@ -20,5 +20,6 @@ namespace GrileMedicinaDev.Services
         Task<bool> UpdateChapterAsync(string id, Chapter chapter);
         Task<bool> DeleteChapterAsync(string id);
         Task<bool> DoChaptersExistAsync(IEnumerable<string> chapterIds);
+        Task<bool> UpdateQuantityChapterAsync(string id, int quantity);
     }
 }
